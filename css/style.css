@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    background-color: #5498a9;
+    background-color: #4ABDAC;
     margin: 0 10%;
 }
 * {
@@ -22,21 +22,24 @@ li {
     
 .font-title {
     font-size: 50px;
-    color: #000000;
-    padding-left: 50px;
+    color: #DFDCE3;
     font-family: 'Staatliches', cursive;
+    margin-left: auto;
+    margin-right: 0;
 }
 
-.header {
-    padding-top: 200px;
-    height: 100%;
+.font-subheader {
+    font-size: 30px;
+    color: #DFDCE3;
+    font-family: 'Staatliches', cursive;
+    margin-left: auto;
+    margin-right: 0;
 }
-
 
 .medium-text {
     font-size: 30px;
     line-height: 40px;
-    color: #000000;
+    color: #DFDCE3;
     font-family: 'Major Mono Display', monospace;
     font-family: 'Lato', sans-serif;
     font-family: 'Staatliches', cursive;
@@ -55,7 +58,7 @@ li {
 
 .footer {
     width: 100%;
-    background-color: 5498a9;
+    background-color: #4ABDAC;
     height: 500px;
 }
 
@@ -106,7 +109,7 @@ li {
     width: 150px;
     height: 150px;
     border-radius: 100px;
-    border: 2px solid black;
+    border: 2px solid DFDCE3;
     margin: 0 50px;
 }
 
@@ -118,9 +121,24 @@ li {
     width: 2px;
     margin-left: -1.5px;
     content: '';
-    background-color: black;
+    background-color: DFDCE3;
 }
 
 .face {
     position: relative;
+}
+
+.introductioncontainer {
+    width: 200%;
+    height: 100%;
+    padding-top: 30%;
+}
+
+.bio {
+    display: inline-flex;
+}
+
+#slash {
+    padding: 0 20px;
+    color: #F7B733;
 }
