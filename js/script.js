@@ -2,7 +2,7 @@
 window.onload = function() {
         var hiimconnor = anime({
             targets: '#introduction',
-            translateX: [ '120vh', 0],
+            translateX: [ '120vw', 0],
             duration: 800,
             loop: false,
             elasticity: 50
@@ -10,7 +10,7 @@ window.onload = function() {
 
         var fullstackdevelop = anime({
             targets: '#fullstackdeveloper',
-            translateX:  [ '120vh', 0],
+            translateX:  [ '120vw', 0],
             duration: 800,
             loop: false,
             delay: 800,
@@ -19,7 +19,7 @@ window.onload = function() {
 
         var slash = anime({
             targets: '#slash',
-            translateX:  [ '120vh', 0],
+            translateX:  [ '120vw', 0],
             duration: 800,
             loop: false,
             delay: 1000,
@@ -27,7 +27,7 @@ window.onload = function() {
         })
         var nomad = anime({
             targets: '#nomad',
-            translateX:  [ '120vh', 0],
+            translateX:  [ '120vw', 0],
             duration: 800,
             loop: false,
             delay: 1400,
