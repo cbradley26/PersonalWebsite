@@ -1,7 +1,15 @@
 body, html {
     height: 100%;
     background-color: #5498a9;
-    margin: 0 120px;
+    margin: 0 10%;
+}
+hr {
+    margin-bottom: 6rem;
+    border-width: 0;
+    border-top: 2px solid #000;
+    width: 40px;
+    text-align: left;
+    margin-left: 50px;
 }
     
 .font-title {
@@ -17,6 +25,7 @@ body, html {
 }
 
 .small-text {
+    font-family: 'Major Mono Display', monospace;
     font-family: 'Lato', sans-serif;
     line-height: 30px;
     font-size: 19px;
@@ -28,12 +37,38 @@ body, html {
 
 .footer {
     width: 100%;
-    background-color: red;
+    background-color: 5498a9;
     height: 500px;
 }
 
 .column-container {
     padding-bottom: 200px;
-    column-gap: 110px;
+    column-gap: 10%;
     column-count: 2;
+}
+
+.portfolio {
+    display: flex;
+}
+
+.portfolioitemcontainer {
+    width: 400px;
+    height: 400px;
+}
+
+.portfolioitem {
+    width: 80%;
+    padding: 10%;
+}
+
+.search {
+    background-color: green;
+}
+
+.stats {
+    background-color: red;
+}
+
+.fish {
+    background-color: orange;
 }
