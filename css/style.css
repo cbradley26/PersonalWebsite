@@ -3,6 +3,9 @@ body, html {
     background-color: #5498a9;
     margin: 0 10%;
 }
+* {
+    box-sizing: border-box;
+}
 hr {
     margin-bottom: 6rem;
     border-width: 0;
@@ -10,6 +13,11 @@ hr {
     width: 40px;
     text-align: left;
     margin-left: 50px;
+}
+
+li {
+    display: -webkit-box;
+    padding-bottom: 50px;
 }
     
 .font-title {
@@ -22,6 +30,16 @@ hr {
 .header {
     padding-top: 200px;
     height: 100%;
+}
+
+
+.medium-text {
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Staatliches', cursive;
 }
 
 .small-text {
@@ -59,6 +77,7 @@ hr {
 .portfolioitem {
     width: 80%;
     padding: 10%;
+    box-sizing: content-box;
 }
 
 .search {
@@ -71,4 +90,36 @@ hr {
 
 .fish {
     background-color: orange;
+}
+
+.timelinecontainer {
+    width: 100%;
+}
+
+.timeline-panel {
+    margin-right: 50%;
+}
+
+.timeline-image {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 2px solid black;
+    margin: 0 50px;
+}
+
+.timelinecontainer::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: '';
+    background-color: black;
+}
+
+.face {
+    position: relative;
 }
