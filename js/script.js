@@ -39,6 +39,7 @@ window.onload = function() {
 
         arrowright.onclick = function() {
             var sections = document.getElementsByClassName("section");
+            appInsights.trackEvent('right to section [' + sectionindex + ']');
             window.scrollTo(sections[sectionindex + 1].offsetLeft, 0);
             if (sections.length - 1 != sectionindex) {
                 sectionindex++;
@@ -49,6 +50,7 @@ window.onload = function() {
 
         arrowleft.onclick = function() {
             var sections = document.getElementsByClassName("section");
+            appInsights.trackEvent('left to section [' + sectionindex + ']');
             window.scrollTo(sections[sectionindex - 1].offsetLeft - (window.innerWidth * 0.1), 0);
             if (sectionindex != 0) {
                 sectionindex--;
