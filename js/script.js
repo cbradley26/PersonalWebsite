@@ -1,3 +1,4 @@
+var sectionindex = 0;
 
 window.onload = function() {
         var hiimconnor = anime({
@@ -34,4 +35,23 @@ window.onload = function() {
             elasticity: 200
         })
 
+        var arrowright = document.getElementsByClassName("arrowright")[0];
+
+        arrowright.onclick = function() {
+            var sections = document.getElementsByClassName("section");
+            window.scrollTo(sections[sectionindex + 1].offsetLeft, 0);
+            if (sections.length - 1 != sectionindex) {
+                sectionindex++;
+            }
+        }
+
+        var arrowleft = document.getElementsByClassName("arrowleft")[0];
+
+        arrowleft.onclick = function() {
+            var sections = document.getElementsByClassName("section");
+            window.scrollTo(sections[sectionindex - 1].offsetLeft - (window.innerWidth * 0.1), 0);
+            if (sectionindex != 0) {
+                sectionindex--;
+        }
+    }
 }
