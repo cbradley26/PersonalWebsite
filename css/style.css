@@ -1,11 +1,17 @@
 body, html {
     height: 100%;
     background-color: #4ABDAC;
-    margin: 0 10%;
 }
 * {
     box-sizing: border-box;
 }
+
+.bigolecontainer {
+    display: flex;
+    flex-direction: row;
+    width: 500vw;
+}
+
 hr {
     margin-bottom: 6rem;
     border-width: 0;
@@ -132,6 +138,7 @@ li {
     width: 200%;
     height: 100%;
     padding-top: 30%;
+    margin: auto 10%;
 }
 
 .bio {
@@ -141,4 +148,31 @@ li {
 #slash {
     padding: 0 20px;
     color: #F7B733;
+}
+
+/* ::-webkit-scrollbar { 
+    display: none; 
+} */
+
+.arrowright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.arrowleft {
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.section {
+    order: 1;
+    height: 100vh;
+    width: 100vw;
+}
+
+.biographycontainer {
+    margin: auto 10%;
 }
