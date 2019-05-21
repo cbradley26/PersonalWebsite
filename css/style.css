@@ -1,10 +1,13 @@
 body, html {
     height: 100%;
     background-color: #4ABDAC;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 * {
     box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none; 
 }
 
 .bigolecontainer {
@@ -24,8 +27,13 @@ hr {
 }
 
 li {
-    display: -webkit-box;
+    display: inline-flex;
+    flex-wrap: wrap;
     padding-bottom: 50px;
+}
+
+ul {
+    padding-inline-start: 0px;
 }
     
 .font-title {
@@ -76,6 +84,12 @@ li {
     column-count: 2;
 }
 
+@media only screen and (max-width: 700px)  {
+    .column-container {
+        column-count: 1;
+    }
+}
+
 .portfoliosection {
     margin: 0 10%;
 }
@@ -113,12 +127,10 @@ li {
 }
 
 .timelinecontainer {
-    width: 100%;
+    width: 80%;
     margin: auto 10%;
-}
-
-.timeline-panel {
-    margin-right: 50%;
+    overflow: hidden;
+    word-break: break-word;
 }
 
 .timeline-image {
@@ -126,8 +138,8 @@ li {
     width: 150px;
     height: 150px;
     border-radius: 100px;
-    border: 2px solid DFDCE3;
-    margin: 0 50px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .face {
@@ -135,7 +147,7 @@ li {
 }
 
 .introductioncontainer {
-    width: 200%;
+    width: 80%;
     height: 100%;
     padding-top: 30%;
     margin: auto 10%;
