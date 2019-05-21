@@ -65,7 +65,7 @@ const sections = document.getElementsByClassName('section');
 var left = 0;
 var currentSection = sections[0];
 
-const scrollToSection = function (dir) {
+function scrollToSection(dir) {
 
     if (dir == 'right') {
         if (checkvisible(sections[sections.length - 1])) {
