@@ -1,0 +1,9 @@
+.BlogTile {
+    background: antiquewhite;
+    width: 400px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+    font-size: 19px;
+    padding-top: 30px;
+}

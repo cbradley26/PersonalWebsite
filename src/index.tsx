@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Blog from './Blog';
+import Blog from './Blog/Blog';
+import BlogTiles from './Blog/BlogTiles'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Blog />, document.getElementById('portfolio'));

@@ -3,12 +3,20 @@
 <head>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <meta name="HandheldFriendly" content="true" /><meta name="viewport" id="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0, width=device-width, viewport-fit=cover" /><meta name="apple-touch-fullscreen" content="YES" /><meta name="apple-mobile-web-app-status-bar-style" content="black" /><meta name="apple-mobile-web-app-capable" content="YES" /><meta name="msapplication-tap-highlight" content="no" /><meta name="format-detection" content="telephone=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" id="viewport"
+        content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0, width=device-width, viewport-fit=cover" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="YES" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Major+Mono+Display|Staatliches" rel="stylesheet">
 
-    <!-- To collect end-user usage analytics about your application, insert the following script into each page you want to track. Place this code immediately before the closing </head> tag, and before any other scripts. Your first data will appear automatically in just a few seconds. --> 
-    <script type="text/javascript"> var appInsights=window.appInsights||function(a){ function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c }({ instrumentationKey:"c851f6c9-9362-4d3d-9f1e-a1536475b750" }); window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView(); </script>
+    <!-- To collect end-user usage analytics about your application, insert the following script into each page you want to track. Place this code immediately before the closing </head> tag, and before any other scripts. Your first data will appear automatically in just a few seconds. -->
+    <script
+        type="text/javascript"> var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c }({ instrumentationKey: "c851f6c9-9362-4d3d-9f1e-a1536475b750" }); window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView(); </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/script.js"></script>
@@ -104,9 +112,8 @@
                 <div class="font-title">Blog</div>
                 <hr />
 
-                <div id="portfolio">
-                    
-                </div>
+                <div id="portfolio"></div>
+                <div id="blogtiles"></div>
             </div>
         </div>
 
@@ -114,122 +121,122 @@
 
         <!-- Timeline -->
         <div class="section">
-                <div class="timelinecontainer">
-                        <div class="font-title">Timeline</div>
-                        <hr />
-                    <ul>
-                        <li>
-                            <img class="timeline-image" src="images/bcu.jpg" alt="BCU">
-                            <div class="timeline-panel">
-                                <div class="timeline-header medium-text">
-                                    Birmingham City University - Computer Science Student - 2013-2017
-                                </div>
-                                <div class="timeline-subtext small-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
-                                    ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
-                                    eros.
-                                    Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
-                                    euismod, sit
-                                    amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
-                                    facilisis
-                                    erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
-                                </div>
+            <div class="timelinecontainer">
+                <div class="font-title">Timeline</div>
+                <hr />
+                <ul>
+                    <li>
+                        <img class="timeline-image" src="images/bcu.jpg" alt="BCU">
+                        <div class="timeline-panel">
+                            <div class="timeline-header medium-text">
+                                Birmingham City University - Computer Science Student - 2013-2017
                             </div>
-                        </li>
-                        <li>
-                            <img class="timeline-image" src="images/Bet365-logo.png" alt="bet365">
-                            <div class="timeline-panel">
-                                <div class="timeline-header medium-text">
-                                    bet365 - Junior Software Developer - BackOffice Members
-                                </div>
-                                <div class="timeline-subtext small-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
-                                    ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
-                                    eros.
-                                    Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
-                                    euismod, sit
-                                    amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
-                                    facilisis
-                                    erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
+                            <div class="timeline-subtext small-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
+                                ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
+                                eros.
+                                Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
+                                euismod, sit
+                                amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
+                                facilisis
+                                erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="timeline-image" src="images/Bet365-logo.png" alt="bet365">
+                        <div class="timeline-panel">
+                            <div class="timeline-header medium-text">
+                                bet365 - Junior Software Developer - BackOffice Members
+                            </div>
+                            <div class="timeline-subtext small-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
+                                ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
+                                eros.
+                                Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
+                                euismod, sit
+                                amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
+                                facilisis
+                                erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
 
-                                </div>
-                        </li>
-                        <li>
-                            <img class="timeline-image" src="images/bcu.jpg" alt="BCU">
-                            <div class="timeline-panel">
-                                <div class="timeline-header medium-text">
-                                    Birmingham City University - Data Analyst Demonstrator - 2016-2017
-                                </div>
-                                <div class="timeline-subtext small-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
-                                    ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
-                                    eros.
-                                    Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
-                                    euismod, sit
-                                    amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
-                                    facilisis
-                                    erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
-                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <img class="timeline-image" src="images/Bet365-logo.png" alt="bet365">
-                            <div class="timeline-panel">
-                                <div class="timeline-header medium-text">
-                                    bet365 - Junior Software Developer - Sports UI
-                                </div>
-                                <div class="timeline-subtext small-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
-                                    ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
-                                    eros.
-                                    Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
-                                    euismod, sit
-                                    amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
-                                    facilisis
-                                    erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
-                                </div>
+                    </li>
+                    <li>
+                        <img class="timeline-image" src="images/bcu.jpg" alt="BCU">
+                        <div class="timeline-panel">
+                            <div class="timeline-header medium-text">
+                                Birmingham City University - Data Analyst Demonstrator - 2016-2017
                             </div>
-                        </li>
-                        <li>
-                            <img class="timeline-image" src="images/Bet365-logo.png" alt="bet365">
-                            <div class="timeline-panel">
-                                <div class="timeline-header medium-text">
-                                    bet365 - Software Developer - SportsUI
-                                </div>
-                                <div class="timeline-subtext small-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
-                                    ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
-                                    eros.
-                                    Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
-                                    euismod, sit
-                                    amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
-                                    facilisis
-                                    erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
-                                </div>
+                            <div class="timeline-subtext small-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
+                                ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
+                                eros.
+                                Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
+                                euismod, sit
+                                amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
+                                facilisis
+                                erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
                             </div>
-                        </li>
-                        <li>
-                            <img class="timeline-image" src="images/Bet365-logo.png" alt="bet365">
-                            <div class="timeline-panel">
-                                <div class="timeline-header medium-text">
-                                    bet365 - Software Developer - Data Delivery
-                                </div>
-                                <div class="timeline-subtext small-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
-                                    ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
-                                    eros.
-                                    Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
-                                    euismod, sit
-                                    amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
-                                    facilisis
-                                    erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
-                                </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="timeline-image" src="images/Bet365-logo.png" alt="bet365">
+                        <div class="timeline-panel">
+                            <div class="timeline-header medium-text">
+                                bet365 - Junior Software Developer - Sports UI
                             </div>
-                        </li>
-                    </ul>
-                </div>
+                            <div class="timeline-subtext small-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
+                                ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
+                                eros.
+                                Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
+                                euismod, sit
+                                amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
+                                facilisis
+                                erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="timeline-image" src="images/Bet365-logo.png" alt="bet365">
+                        <div class="timeline-panel">
+                            <div class="timeline-header medium-text">
+                                bet365 - Software Developer - SportsUI
+                            </div>
+                            <div class="timeline-subtext small-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
+                                ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
+                                eros.
+                                Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
+                                euismod, sit
+                                amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
+                                facilisis
+                                erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="timeline-image" src="images/Bet365-logo.png" alt="bet365">
+                        <div class="timeline-panel">
+                            <div class="timeline-header medium-text">
+                                bet365 - Software Developer - Data Delivery
+                            </div>
+                            <div class="timeline-subtext small-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis at elit et
+                                ultricies. Sed cursus dolor risus, et luctus lorem commodo id. Vestibulum eu tellus
+                                eros.
+                                Praesent scelerisque turpis et feugiat ultricies. Proin imperdiet felis ac est
+                                euismod, sit
+                                amet imperdiet mi iaculis. Vivamus pulvinar finibus mauris ut blandit. Praesent
+                                facilisis
+                                erat enim. Sed suscipit ullamcorper ante, id rutrum magna pretium vitae.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
     </div>
 
 </body>
